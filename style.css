@@ -17,6 +17,12 @@ p {
   text-indent: 2rem;
 }
 
+b {
+  padding: 8px 0;
+  margin-left: 0 auto;
+  font-weight: bolder;
+}
+
 pre {
   background: #f4f4f4;
   border: 1px solid #ddd;
@@ -39,8 +45,8 @@ pre {
   grid-template-columns: 60% auto;
 }
 
-.grid div{
-    margin: 0 5%
+.grid div {
+  margin: 0 5%;
 }
 
 .red {
