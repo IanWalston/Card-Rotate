@@ -1,0 +1,75 @@
+body {
+  margin: 1rem 10%;
+}
+
+h1 {
+  font-size: 200%;
+  padding: 8px 0;
+}
+
+h2 {
+  font-size: 160%;
+  padding: 8px 0;
+}
+
+p {
+  padding: 8px 0;
+  text-indent: 2rem;
+}
+
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 60% auto;
+}
+
+.grid div{
+    margin: 0 5%
+}
+
+.red {
+  background: red;
+}
+img {
+  transition: 1s;
+  padding: 6px;
+}
+
+.rotz180 {
+  transform: rotateZ(180deg);
+}
+.roty180 {
+  transform: rotateY(180deg);
+}
+.rotx180 {
+  transform: rotateX(180deg);
+}
+
+.rotxy180 {
+  transform: rotateX(180deg) rotateY(180deg);
+}
+.rotxz180 {
+  transform: rotateX(180deg) rotateZ(180deg);
+}
+.rotyz180 {
+  transform: rotateY(180deg) rotateZ(180deg);
+}
+.rotxyz180 {
+  transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}

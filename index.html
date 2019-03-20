@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1>Rotation Animation using CSS transform.</h1>
+
+    <p>
+      There are three types of rotation available to us using the css property,
+      transform. These types correspond with the three axes in 3D space: X, Y,
+      and Z.
+    </p>
+    <!-- <p>
+      The X axis runs left to right, Y is up and down, and Z goes foreward and
+      back. In the context of a device's screen, the Z axis goes from behind the
+      screen to in front of it. An html element cannot really move through the Z
+      axis, so this illusion is achieved through the X and Y axis.
+    </p>
+    <p>
+      When an object is said to rotate around a certain axis, it spins as if the
+      axis was a rigid rod running through it. Imagine a rod sticking straight
+      out of your screen, towards your face. This is the Z axis. If you were to
+      spin this rod clockwise, this would be a positive Z axis rotation.
+    </p> -->
+
+    <p>
+      CSS transformations happen instantly, as soon as the class is added. To
+      make the transition smooth, you can give the div the css property
+      transition an amount of seconds equal to the duration of the animation,
+      like this:
+    </p>
+
+    <pre>
+div {
+  transition: 1s;
+  padding: 6px;
+}              
+    </pre>
+    <br />
+    <br />
+
+    <div class="grid">
+      <div>
+        <h2>RotateZ(180deg)</h2>
+        <pre>
+.rotz180 { transform: rotateZ(180deg); }
+        </pre>
+      </div>
+
+      <img src="images/KS.svg" onclick="toggleClass(this, 'rotz180')" />
+      <div>
+        <h2>RotateY(180deg)</h2>
+        <pre>
+.rotz180 { transform: rotateY(180deg); }
+        </pre>
+      </div>
+
+      <img src="images/QS.svg" onclick="toggleClass(this, 'roty180')" />
+
+      <div>
+        <h2>RotateX(180deg)</h2>
+        <pre>
+.rotz180 { transform: rotateX(180deg); }
+        </pre>
+      </div>
+
+      <img src="images/JS.svg" onclick="toggleClass(this, 'rotx180')" />
+
+      <div>
+        <h2>X and Y</h2>
+        <pre>
+.rotz180 { transform: rotateX(180deg) rotateY(180deg); }
+        </pre>
+      </div>
+
+      <img src="images/KS.svg" onclick="toggleClass(this, 'rotxy180');" />
+
+      <div>
+        <h2>X and Z</h2>
+        <pre>
+.rotz180 { transform: rotateX(180deg) rotateZ(180deg); }
+        </pre>
+      </div>
+      <img src="images/QS.svg" onclick="toggleClass(this, 'rotxz180')" />
+
+      <div>
+        <h2>Y and Z</h2>
+        <pre>
+.rotz180 { transform: rotateY(180deg) rotateZ(180deg);}
+        </pre>
+      </div>
+      <img src="images/JS.svg" onclick="toggleClass(this, 'rotyz180')" />
+      <div>
+        <h2>X, Y and Z</h2>
+        <pre>
+.rotz180 { transform: rotateX(180deg) rotateY(180deg)
+          rotateZ(180deg);}
+        </pre>
+      </div>
+      <img src="images/KS.svg" onclick="toggleClass(this, 'rotxyz180')" />
+    </div>
+  </body>
+</html>
